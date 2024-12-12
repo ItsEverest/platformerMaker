@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Czcionka-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="gameEngine.css">
+    <title>GameEngine</title>
+</head>
+<body>
+    <div id="projectsWindow" class="window">
+        <h1>GameEngine 0.1</h1>
+        <button class="windowButton" id="newProjectButton">Create new project</button>
+        <h2>Project list:</h2>
+        <table>
+            <th>Name</th>
+            <th>Created</th>
+            <tr>
+                <td>NoImage</td>
+                <td>12.12.2024</td>
+                <td><button>Load</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="navbar" class="settings">
+        <div id="export" class="navButton">Export</div>
+    </div>
+
+    <div id="gameViewport">
+        <span class="title">Game viewport</span>
+    </div>
+
+    <div id="propertiesWindow">
+        <span class="title">Properties</span>
+    </div>
+
+    <div id="fileBrowser" class="settings">
+        <span class="title">File browser</span>
+        <div id="folderTree"></div>
+        <input type="file" id="assetImport">
+    </div>
+
+    <script type="module" src="gameEngine.js"></script>
+</body>
+</html>
